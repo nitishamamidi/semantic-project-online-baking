@@ -1,0 +1,1104 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-11="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#belongs_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#belongs_to">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Account"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#admin"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#has_account -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#has_account">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#admin"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Account"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#has_flavour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#has_flavour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Flavour"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Fruity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Nuts"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolate"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#has_shape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#has_shape">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#shape"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cartoon_shaped_cake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#heart_shaped_cake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#object_shaped_cakes"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#round_shaped_cake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#square_shaped_cake"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#has_toppings -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#has_toppings">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Toppings"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolate_toppings"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruit_toppings"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#nutty_toppings"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#is_madeof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#is_madeof">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Flavour"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Toppings"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#shape"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Fruity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Nuts"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolate"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cartoon_shaped_cake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#heart_shaped_cake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#object_shaped_cakes"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#round_shaped_cake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#square_shaped_cake"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolate_toppings"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruit_toppings"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#nutty_toppings"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Address">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customerdetails"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Adds_In -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Adds_In"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#EmailId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#EmailId">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customerdetails"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customerdetails"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customerdetails -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customerdetails"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#flavour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#flavour"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#price"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#quantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#quantity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#shape -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#shape"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#size"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#sponge_flavour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#sponge_flavour"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#syrup_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#syrup_name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#topping -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#topping"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Account"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#AdminAccount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#AdminAccount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Bread -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Bread">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Item_Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Bun -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Bun">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Item_Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#CustomerAccount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#CustomerAccount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Flavour"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Fruity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Fruity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Icecream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Icecream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Item_Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Item_Menu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Item_Menu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Nuts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Nuts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Puffs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Puffs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Item_Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Toppings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Toppings"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#admin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Item_Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cartoon_shaped_cake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cartoon_shaped_cake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolate_toppings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolate_toppings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Toppings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#coffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#coffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Item_Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cookies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cookies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Item_Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruit_toppings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruit_toppings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Toppings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#heart_shaped_cake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#heart_shaped_cake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#milkshake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#milkshake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Item_Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#nutty_toppings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#nutty_toppings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Toppings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#object_shaped_cakes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#object_shaped_cakes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#round_shaped_cake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#round_shaped_cake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#shape"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#square_shaped_cake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#square_shaped_cake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#shape"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Almond -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Almond">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#nutty_toppings"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruit_toppings"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruity_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Bannana_milkshake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Bannana_milkshake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#milkshake"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruity"/>
+        <Adds_In>Skimmed Milk with ice</Adds_In>
+        <flavour>caramel</flavour>
+        <name>Banana Milkshake</name>
+        <size>regular</size>
+        <syrup_name>honey</syrup_name>
+        <topping>chocolate</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Blackforest_cake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Blackforest_cake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cake"/>
+        <has_toppings rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cherry"/>
+        <name>Blackforest Pastry</name>
+        <quantity>2 Kg</quantity>
+        <sponge_flavour>vanila</sponge_flavour>
+        <topping>cheery and almond</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Blueberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Blueberry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruit_toppings"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruity_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Dark_choco_cookies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Dark_choco_cookies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cookies"/>
+        <has_toppings rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatey"/>
+        <name>DarkChocoCookies</name>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</quantity>
+        <topping>choco chip</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Milkcookies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Milkcookies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cookies"/>
+        <has_toppings rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatey"/>
+        <name>White Chocolate Milk Cookies</name>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</quantity>
+        <topping>choco chip</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Redvelvet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Redvelvet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cake"/>
+        <has_shape rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#square"/>
+        <has_toppings rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#nut_topping"/>
+        <flavour>burberry</flavour>
+        <name>Cashew Redvelvet Cake</name>
+        <quantity>1 kg</quantity>
+        <shape>square</shape>
+        <sponge_flavour>vanilla</sponge_flavour>
+        <syrup_name>caramilzed</syrup_name>
+        <topping>Cashew</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#WhiteCookies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#WhiteCookies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cookies"/>
+        <has_toppings rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cashew"/>
+        <name>white Cashew Cookies</name>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</quantity>
+        <topping>cashew</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#americano_coffe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#americano_coffe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#coffee"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatey"/>
+        <Adds_In>semi-skinned-milk</Adds_In>
+        <flavour>caramel</flavour>
+        <name>Americano_Hotchocolate</name>
+        <size>small</size>
+        <syrup_name>classic</syrup_name>
+        <topping>Hazelnut</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#bread -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#bread"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#bun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#bun"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#butterstochicecream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#butterstochicecream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Icecream"/>
+        <flavour>butterscotch</flavour>
+        <name>Butter sctoch Icecream</name>
+        <size>large</size>
+        <syrup_name>hazzlenut</syrup_name>
+        <topping>cashew</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cappuccion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cappuccion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#coffee"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatey"/>
+        <Adds_In>Splash Skinned Milk</Adds_In>
+        <flavour>chocolate</flavour>
+        <name>Cappacinno Cold Coffe</name>
+        <size>medium</size>
+        <syrup_name>classic</syrup_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cartoon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cartoon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#shape"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cashew -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cashew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Toppings"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#nut_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cherry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cherry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Toppings"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruity_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#choclate_cake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#choclate_cake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cake"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatey"/>
+        <has_toppings rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cashew"/>
+        <flavour>chocolaety</flavour>
+        <name>Chocolate Mouse</name>
+        <quantity>4kg</quantity>
+        <shape>cupcake</shape>
+        <sponge_flavour>butter</sponge_flavour>
+        <syrup_name>caramel</syrup_name>
+        <topping>cashew</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocochipcookies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocochipcookies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cookies"/>
+        <has_toppings rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatey"/>
+        <name>Choco chip cookies</name>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</quantity>
+        <topping>choco chip</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolateicecream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolateicecream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Icecream"/>
+        <flavour>Elachi</flavour>
+        <name>ChocolateIcecream</name>
+        <size>Regular</size>
+        <syrup_name>Caramel</syrup_name>
+        <topping>Almond</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatemilkshake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatemilkshake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#milkshake"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatey"/>
+        <Adds_In>Splash vanilla icecream</Adds_In>
+        <flavour>mint</flavour>
+        <name>DBC chocolate milkshake</name>
+        <size>Large</size>
+        <syrup_name>caramel</syrup_name>
+        <topping>Cashew</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Flavour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#coldcoffe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#coldcoffe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#coffee"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatey"/>
+        <Adds_In>semi skimmed milk</Adds_In>
+        <flavour>vanilla</flavour>
+        <name>white chocolate cold coffe</name>
+        <size>regular</size>
+        <syrup_name>white chocolate</syrup_name>
+        <topping>almond</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer"/>
+        <Address>Cambridge</Address>
+        <EmailId>aishw123@gmail.com</EmailId>
+        <Name>Aishwarya</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer"/>
+        <Address>London</Address>
+        <EmailId>sri789@yahoo.com</EmailId>
+        <Name>Sridhu</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer"/>
+        <Address>Cambridge</Address>
+        <EmailId>varsh12345@gmail.com</EmailId>
+        <Name>Varsha</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#customer"/>
+        <Address>Cambridge</Address>
+        <EmailId>chi789@gmail.com</EmailId>
+        <Name>Chithra</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#egg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#egg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Puffs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#eggpuff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#eggpuff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Puffs"/>
+        <is_madeof rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#egg"/>
+        <name>Egg Puff</name>
+        <price>10 pounds</price>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#expressio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#expressio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#coffee"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Apple"/>
+        <Adds_In>Skimmed milk</Adds_In>
+        <flavour>Apple</flavour>
+        <name>Apple Expression Hot coffe</name>
+        <size>small</size>
+        <topping>cashew</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Flavour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruity_topping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruity_topping">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruit_toppings"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruity_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#hotcoffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#hotcoffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#coffee"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatey"/>
+        <flavour>elachi</flavour>
+        <name>Chocolate Hot Coffee</name>
+        <size>Large</size>
+        <syrup_name>chocolate</syrup_name>
+        <topping>cinanimum</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#maida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#maida"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#mangomilkshake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#mangomilkshake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#milkshake"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruity"/>
+        <Adds_In>Vanilla Icecream</Adds_In>
+        <flavour>Mango</flavour>
+        <name>MangoMilkshake</name>
+        <size>Large</size>
+        <syrup_name>caramel</syrup_name>
+        <topping>Mango</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#nut_topping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#nut_topping"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#object -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#oreomilkshake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#oreomilkshake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#milkshake"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#chocolatey"/>
+        <Adds_In>oreo biscuits chrunks and milk</Adds_In>
+        <flavour>vanilla</flavour>
+        <name>oreo milkshake</name>
+        <size>large</size>
+        <syrup_name>white chocolate</syrup_name>
+        <topping>oreo biscuits</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#paneerpuff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#paneerpuff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Puffs"/>
+        <is_madeof rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#panner"/>
+        <name>Paneer puff</name>
+        <price>50 pounds</price>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#panner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#panner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Puffs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#pineapplecake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#pineapplecake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cake"/>
+        <has_shape rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#cartoon"/>
+        <has_toppings rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruity"/>
+        <flavour>pineapple</flavour>
+        <name>PineApple Pastry</name>
+        <quantity>3kg</quantity>
+        <shape>cartoon</shape>
+        <sponge_flavour>butter</sponge_flavour>
+        <topping>hazeelnut</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#spicybun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#spicybun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Bun"/>
+        <is_madeof rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#wheat"/>
+        <name>Spicy Bun</name>
+        <price>5 pounds</price>
+        <size>regular</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#spongebread -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#spongebread">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Bread"/>
+        <is_madeof rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#maida"/>
+        <name>SpongeBread</name>
+        <price>10 pounds</price>
+        <size>small</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#square -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#square"/>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#strawberryicecream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#strawberryicecream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Icecream"/>
+        <flavour>strawberry</flavour>
+        <name>strawberryicecream</name>
+        <size>small</size>
+        <syrup_name>chocolate</syrup_name>
+        <topping>strawberry and cashew</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#strawberrymilkshake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#strawberrymilkshake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#milkshake"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#fruity"/>
+        <Adds_In>vanilla</Adds_In>
+        <flavour>strawberry</flavour>
+        <name>Strawberry Milkshake</name>
+        <size>small</size>
+        <syrup_name>chocolate</syrup_name>
+        <topping>strawberry</topping>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#sweetbread -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#sweetbread">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Bread"/>
+        <is_madeof rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#maida"/>
+        <name>Sweet Bread</name>
+        <price>5 pounds</price>
+        <size>Regular</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#sweetbun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#sweetbun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Bun"/>
+        <is_madeof rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#maida"/>
+        <name>Sweet Bun</name>
+        <price>5 bounds</price>
+        <size>small</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#vegetable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#vegetable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Puffs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#vegetablepuff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#vegetablepuff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Puffs"/>
+        <is_madeof rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#vegetable"/>
+        <name>Vegetablepuff</name>
+        <price>25 pounds</price>
+        <quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</quantity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#wheat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#wheat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Bread"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Bun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#wheatbread -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#wheatbread">
+        <rdf:type rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Bread"/>
+        <is_madeof rdf:resource="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#wheat"/>
+        <name>WheatBread</name>
+        <price>5 pounds</price>
+        <size>small</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#Blueberry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#nut_topping"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#strawberryicecream"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/aishw/ontologies/2021/4/untitled-ontology-11#strawberrymilkshake"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
